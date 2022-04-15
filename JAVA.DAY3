@@ -1,0 +1,77 @@
+.LOG
+
+18:26 04-04-2022
+class ComputeElectricityBill 
+{ 
+        public static void main(String args[]) 
+        {   
+	int units=280;
+	int billpay=units*6;
+	System.out.println("Bill to pay : " + billpay); 
+      } 
+}
+18:44 04-04-2022
+import java.util.Scanner;
+class reversing
+{
+    public static void main(String args[])
+    {
+        int reversing=0;
+        System.out.println("input the nos: ");
+        Scanner sc=new Scanner(System.in);
+        int number=sc.nextInt();
+        for (number!=0;number=number/10)
+        {
+            int remainder=number%10;
+            
+            reversing=reversing*10+remainder;
+        }
+        System.out.println("reversed nos is: "+reversing);
+        
+    }
+}
+
+
+20:22 04-04-2022
+class Polygon {
+  public void render() {
+    System.out.println("Rendering Polygon...");
+  }
+}
+
+class Square extends Polygon {
+  public void render() {
+    System.out.println("Rendering Square...");
+  }
+}
+
+class Circle extends Polygon {
+  public void render() {
+    System.out.println("Rendering Circle...");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    Square s1 = new Square();
+    s1.render();
+    Circle c1 = new Circle();
+    c1.render();
+  }
+}
+20:39 04-04-2022
+//INHERITANCE EXAMPLE
+class animal{  
+ int legs=4;  
+}  
+class dinosour extends animal{  
+ int eyes=2;  
+ public static void main(String args[]){  
+   dinosour d=new dinosour();  
+   System.out.println("dinosour legs are:"+d.legs);  
+   System.out.println("dinosour eyes are:"+d.eyes);  
+}  
+}
+
+
+
