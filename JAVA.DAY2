@@ -1,0 +1,92 @@
+.LOG
+
+
+//20:08 01-04-2022//
+import java.util.Scanner;  
+public class SumOfNumbers2  
+{  
+public static void main(String args[])  
+{  
+int x, y, sum;  
+Scanner sc = new Scanner(System.in);  
+System.out.print("Enter the first number: ");  
+x = sc.nextInt();  
+System.out.print("Enter the second number: ");  
+y = sc.nextInt();  
+sum = sum(x, y);  
+System.out.println("The sum of two numbers x and y is: " + sum);  
+}  
+public static int sum(int a, int b)  
+{  
+int sum = a + b;  
+return sum;  
+}  
+}  
+20:09 01-04-2022
+public class PyramidPattern  
+{    
+public static void main(String args[])   
+{      
+int i, j, row = 6;         
+for (i=0; i<row; i++)   
+{     
+for (j=row-i; j>1; j--)   
+{   
+System.out.print(" ");   
+}   
+for (j=0; j<=i; j++ )   
+{       
+System.out.print("* ");   
+}   
+System.out.println();   
+}   
+}   
+}  
+//20:10 01-04-2022//
+
+public class main
+{
+    public static void main(String[] args)
+    {
+        double a = 9.369;
+        int b = (int)a;
+        int c=3;
+        c<<=3;
+        int d=3;
+        d+=4;
+        int f=6;
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+        System.out.println(Math.max(54,3));
+        System.out.println(Math.abs(-3.3));
+        System.out.println(Math.random());
+        int e=(int)(Math.random()*33);
+        System.out.println(e);
+        {
+        while(f!=10)
+        {
+            System.out.println(f);
+            f++;
+        }
+        }
+
+    }
+}
+//20:10 01-04-2022//
+
+class Main {
+  public int addNumbers(int a, int b) {
+    int sum = a + b;
+    return sum;
+  }
+  public static void main(String[] args) {
+    int num1 = 25;
+    int num2 = 15; 
+    Main obj = new Main();
+    int result = obj.addNumbers(num1, num2);
+    System.out.println("Sum is: " + result);
+  }
+}
+
