@@ -1,4 +1,4 @@
-.LOG
+//.LOG
 
 18:26 04-04-2022
 class ComputeElectricityBill 
