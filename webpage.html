@@ -5,78 +5,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<div class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="#updates">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-  </div>
-<style>
-    .firm{
-        background-color: rgb(22, 219, 245);
-
-        font-size: large;
-        margin-top: 10px;
-        border: 10px solid rgb(13, 1, 1);
-    }
-    .thugish{
-        background-color: rgb(179, 148, 189);
-
-        font-size: large;
-        margin-top: 10px;
-        border: 10px solid rgb(18, 4, 12);
-    }
-    /* Add a black background color to the top navigation */
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-    </style>
     
-<body><div class="thugish"><br>
-    <center><FONT COLOR="red"> <STRONG> <em>"be.novative"</em></STRONG></FONT><br></center>
-<span><img src="C:\Users\91790\Desktop\New folder\use1.jpg"
-         width="600" height="400" align="right"></span>
-    <br>
-    <br>
-    <h><b>Schedule your<br>personal demo</b></h><BR><BR>
-    <FONT COLOR="DARK VIOLET">FILL SOME DETAILS <BR>ABOUT YOURSELF</FONT><br>
+    <style>
+        .firm {
+            background-color: rgb(22, 219, 245);
+            font-size: large;
+            margin-top: 10px;
+            border: 10px solid rgb(13, 1, 1);
+        }
+        .thugish {
+            background-color: rgb(179, 148, 189);
+            font-size: large;
+            margin-top: 10px;
+            border: 10px solid rgb(18, 4, 12);
+            padding: 20px; /* कंटेंट को बॉर्डर से थोड़ा दूर रखने के लिए */
+        }
         
-    <form><br>
-        <INPUT type="text" name=""/>
-        <input type="button"value="first name"/>
-        <INPUT type="text" name=""/>
-        <input type="button"value="last name"/><br><br>
-        <INPUT type="text" name=""/>
-        <input type="button"value="email id"/><br><br>
-        <INPUT type="number" name=""/>
-        <input type="button"value="Phone number"/><br><br>
-        <input type="radio" name="gender"/>Male<br>
-        <input type="radio" name="gender"/>Feale<br>
-   <p> <center><font face="Arial" size="30px" color="blue"><input type="submit"></font>  </center>
-    </form></div>
+        /* Navigation Styles */
+        .topnav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        /* Utility Styles */
+        .center-text {
+            text-align: center;
+        }
+        .brand-text {
+            color: red;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .sub-heading {
+            color: darkviolet;
+        }
+        .submit-btn {
+            font-family: Arial;
+            font-size: 20px;
+            color: blue;
+            display: block;
+            margin: 20px auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Nav bar now properly inside body -->
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#updates">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+
+    <div class="thugish">
+        <div class="center-text">
+            <span class="brand-text">"be.novative"</span>
+        </div>
+        
+        <!-- Image with clean styling -->
+        <img src="C:\Users\91790\Desktop\New folder\use1.jpg" width="600" height="400" style="float: right; margin-left: 20px;">
+        
+        <h2><b>Schedule your<br>personal demo</b></h2>
+        <div class="sub-heading">FILL SOME DETAILS <br>ABOUT YOURSELF</div>
+            
+        <form>
+            <div class="form-group">
+                <label>First Name: </label>
+                <input type="text" name="firstname"/>
+            </div>
+            
+            <div class="form-group">
+                <label>Last Name: </label>
+                <input type="text" name="lastname"/>
+            </div>
+            
+            <div class="form-group">
+                <label>Email ID: </label>
+                <input type="email" name="email"/>
+            </div>
+            
+            <div class="form-group">
+                <label>Phone Number: </label>
+                <input type="tel" name="phone"/>
+            </div>
+            
+            <div class="form-group">
+                <input type="radio" name="gender" value="male"/> Male<br>
+                <input type="radio" name="gender" value="female"/> Female
+            </div>
+            
+            <input type="submit" class="submit-btn" value="Submit">
+        </form>
+    </div>
+
 </body>
 </html>
